@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>서비스 소개 & 오픈소스 아키텍처 | PDF 툴박스</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen p-4 sm:p-8 font-sans">
+  <div class="max-w-3xl mx-auto bg-white p-6 sm:p-10 rounded-2xl shadow-sm border border-slate-200">
+    <a href="/" class="inline-flex items-center text-indigo-600 hover:text-indigo-800 text-sm font-semibold mb-6">
+      ← PDF 툴박스 메인으로 돌아가기
+    </a>
+    <h1 class="text-2xl sm:text-3xl font-black mb-4 text-slate-900">PDF 툴박스 기술 아키텍처 및 철학</h1>
+    <p class="text-slate-500 mb-6 leading-relaxed">
+      왜 다른 상용 PDF 사이트들은 내 문서를 서버에 올리고, 하루에 2번만 무료로 제한하며, 월 1만 원이 넘는 구독을 강제할까요?
+    </p>
+
+    <div class="space-y-6 text-sm leading-relaxed text-slate-600">
+      <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+        <h3 class="text-base font-bold text-slate-800 mb-2">1. 완벽한 클라이언트 사이드 웹 표준 기술 (No Server)</h3>
+        <p>PDF 툴박스는 최신 웹 어셈블리(WebAssembly) 및 <strong>pdf-lib</strong>, <strong>PDF.js</strong> 엔진을 활용하여 문서 병합, 분할, 변환, 전자서명 등의 고난도 연산을 브라우저 엔진에서 직접 연산합니다. 서버를 거치지 않으므로 파일 업로드 속도를 기다릴 필요 없이 즉시 결과가 생성됩니다.</p>
+      </div>
+
+      <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+        <h3 class="text-base font-bold text-slate-800 mb-2">2. 엄격한 개인정보 보호 (100% Zero-Upload)</h3>
+        <p>계약서, 주민등록등본, 의료기록, 금융 문서 등 민감한 개인정보가 담긴 PDF를 원격 서버에 업로드하는 것은 위험합니다. PDF 툴박스는 사용자의 로컬 RAM 메모리에서만 작업하며, 창을 닫는 즉시 완전히 소멸합니다.</p>
+      </div>
+
+      <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+        <h3 class="text-base font-bold text-slate-800 mb-2">3. 무제한 무료 & 정직한 일회성 커피값 플랜</h3>
+        <p>핵심 기능은 영구 무제한 무료입니다. 광고 없는 깔끔한 작업 환경을 원하시는 분들을 위해 정기 구독 결제가 아닌, <strong>$2.99 일회성 평생 라이선스</strong>(Lemon Squeezy 제공)만을 제공합니다.</p>
+      </div>
+    </div>
+    
+    <div class="mt-8 pt-6 border-t border-slate-100 text-xs text-slate-400 text-center">
+      © 2026 PDF Toolbox · Zero Server Architecture
+    </div>
+  </div>
+</body>
+</html>
