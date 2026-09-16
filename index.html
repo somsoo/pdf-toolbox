@@ -41,20 +41,57 @@
   </style>
 <!-- JSON-LD 구조화 데이터 -->
 <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "PDF 툴박스 (PDF Toolbox)",
-    "url": "https://pdf-toolbox.enjoy-onepage.com/",
-    "description": "서버 업로드 없는 100% 브라우저 로컬 PDF 병합, 분할, 압축, 이미지 변환, 전자서명 올인원 도구",
-    "applicationCategory": "UtilitiesApplication",
-    "operatingSystem": "All",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "KRW"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://pdf-toolbox.enjoy-onepage.com/#webapp",
+      "name": "PDF 툴박스",
+      "url": "https://pdf-toolbox.enjoy-onepage.com/",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "description": "서버 전송 없는 100% 브라우저 로컬 PDF 올인원 도구. PDF 병합, 분할, 압축, 이미지 변환, 페이지 회전/삭제, 전자서명을 영구 무료 무제한으로 사용하세요.",
+      "image": "https://pdf-toolbox.enjoy-onepage.com/og-image.png",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "KRW"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://pdf-toolbox.enjoy-onepage.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "정말 외부 서버에 제 파일이 업로드되지 않나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "네, PDF 툴박스는 최신 브라우저의 WebAssembly 및 HTML5 FileReader 엔진을 통해 사용자의 기기 CPU/RAM에서만 파일을 열고 저장합니다. 인터넷 연결을 끊고도 모든 변환 작업이 100% 작동합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "대용량 PDF 파일도 변환이나 페이지 추출이 가능한가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "브라우저 메모리 한도 내에서 100MB 이상의 대용량 PDF 문서도 빠른 속도로 병합 및 추출이 가능합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "모바일 스마트폰이나 태블릿에서도 사용할 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "네, 모바일 사파리, 크롬, 삼성인터넷 등 모든 최신 모바일 브라우저의 터치 조작 및 PDF 뷰어를 완벽히 지원합니다."
+          }
+        }
+      ]
     }
-  }
+  ]
+}
   </script>
 <style id="layout-shield">
   html, body {
