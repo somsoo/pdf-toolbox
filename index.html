@@ -1,40 +1,35 @@
 <!DOCTYPE html>
+
 <html lang="ko">
 <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <meta content="index, follow" name="robots"/>
-  <title>PDF 툴박스 | 브라우저 100% 로컬 PDF 병합·분할·압축·변환·서명 도구</title>
-  <meta content="서버 전송 없는 100% 브라우저 로컬 PDF 올인원 도구. PDF 병합, 분할, 압축, 이미지 변환, 페이지 회전/삭제, 전자서명을 영구 무료 무제한으로 사용하세요." name="description"/>
-  <meta content="PDF 병합, PDF 합치기, PDF 분할, PDF 나누기, PDF 압축, 이미지 PDF 변환, PDF 전자서명, 무료 PDF 편집기, 무설치 PDF 도구" name="keywords"/>
-  <link href="https://pdf-toolbox.enjoy-onepage.com/" rel="canonical"/>
-  
-  <!-- 파비콘 & 아이콘 -->
-  <link href="favicon.ico" rel="icon" type="image/x-icon"/>
-  <link href="icon.png" rel="icon" sizes="32x32" type="image/png"/>
-  <link href="icon.png" rel="apple-touch-icon"/>
-  <meta content="#4F46E5" name="theme-color"/>
-  
-  <!-- 오픈그래프 (OpenGraph) -->
-  <meta content="website" property="og:type"/>
-  <meta content="PDF 툴박스" property="og:site_name"/>
-  <meta content="PDF 툴박스 | 브라우저 100% 로컬 PDF 병합·분할·압축·변환·서명" property="og:title"/>
-  <meta content="파일이 서버로 전송되지 않는 안전한 100% 클라이언트 PDF 편집 도구. 병합, 분할, 압축, 서명을 무제한 무료로 이용하세요." property="og:description"/>
-  <meta content="https://pdf-toolbox.enjoy-onepage.com/" property="og:url"/>
-  <meta content="https://pdf-toolbox.enjoy-onepage.com/icon.png" property="og:image"/>
-  
-  <!-- Tailwind CSS & FontAwesome -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  
-  <!-- pdf-lib (클라이언트 사이드 순수 PDF 엔진) -->
-  <script src="./pdf-lib.min.js"></script>
-  <script>if(typeof PDFLib === "undefined"){document.write('<script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"><\/script>');}</script>
-
-  <!-- Google AdSense 비동기 로더 -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2228289204702106" crossorigin="anonymous"></script>
-
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="index, follow" name="robots"/>
+<title>PDF 툴박스 | 브라우저 100% 로컬 PDF 병합·분할·압축·변환·서명 도구</title>
+<meta content="서버 전송 없는 100% 브라우저 로컬 PDF 올인원 도구. PDF 병합, 분할, 압축, 이미지 변환, 페이지 회전/삭제, 전자서명을 영구 무료 무제한으로 사용하세요." name="description"/>
+<meta content="PDF 병합, PDF 합치기, PDF 분할, PDF 나누기, PDF 압축, 이미지 PDF 변환, PDF 전자서명, 무료 PDF 편집기, 무설치 PDF 도구" name="keywords"/>
+<link href="https://pdf-toolbox.enjoy-onepage.com/" rel="canonical"/>
+<!-- 파비콘 & 아이콘 -->
+<link href="favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="icon.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="icon.png" rel="apple-touch-icon"/>
+<meta content="#4F46E5" name="theme-color"/>
+<!-- 오픈그래프 (OpenGraph) -->
+<meta content="website" property="og:type"/>
+<meta content="PDF 툴박스" property="og:site_name"/>
+<meta content="PDF 툴박스 | 브라우저 100% 로컬 PDF 병합·분할·압축·변환.." property="og:title"/>
+<meta content="파일이 서버로 전송되지 않는 안전한 100% 클라이언트 PDF 편집 도구. 병합, 분할, 압축, 서명을 무제한 무료로 이용하세요." property="og:description"/>
+<meta content="https://pdf-toolbox.enjoy-onepage.com/" property="og:url"/>
+<meta content="https://pdf-toolbox.enjoy-onepage.com/og-image.png" property="og:image"/>
+<!-- Tailwind CSS & FontAwesome -->
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- pdf-lib (클라이언트 사이드 순수 PDF 엔진) -->
+<script src="./pdf-lib.min.js"></script>
+<script>if(typeof PDFLib === "undefined"){document.write('<script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"><\/script>');}</script>
+<!-- Google AdSense 비동기 로더 -->
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2228289204702106"></script>
+<style>
     @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
     body { font-family: 'Pretendard', sans-serif; background-color: #F8FAFC; }
     .drop-zone-active { border-color: #4F46E5; background-color: #EEF2FF; }
@@ -43,9 +38,8 @@
     .custom-scrollbar::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 4px; }
     .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
   </style>
-
-  <!-- JSON-LD 구조화 데이터 -->
-  <script type="application/ld+json">
+<!-- JSON-LD 구조화 데이터 -->
+<script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
@@ -79,483 +73,417 @@
     overflow: hidden !important;
   }
 </style>
-</head>
+<meta content="summary_large_image" name="twitter:card"/><meta content="PDF 툴박스 | 브라우저 100% 로컬 PDF 병합·분할·압축·변환.." name="twitter:title"/><meta content="파일이 서버로 전송되지 않는 안전한 100% 클라이언트 PDF 편집 도구. 병합, 분할, 압축, 서명을 무제한 무료로 이용하세요." name="twitter:description"/><meta content="https://pdf-toolbox.enjoy-onepage.com/og-image.png" name="twitter:image"/></head>
 <body class="min-h-screen flex flex-col items-center justify-start text-slate-800 antialiased p-3 sm:p-6">
-
-  <!-- 상단 슬림 띠배너 (헤더 직상단: 50~60px 슬림형) -->
-  <div class="manual-ad-box ad-top-banner w-full max-w-5xl mx-auto my-2 text-center overflow-hidden">
-    <ins class="adsbygoogle"
-         style="display:inline-block;width:100%;height:60px;"
-         data-ad-client="ca-pub-2228289204702106"
-         data-ad-slot="3824727725"
-         data-ad-format="horizontal"
-         data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  </div>
-
-  <!-- 메인 래퍼 (최대 1024px 너비, Double-Nesting 방지 루트 단일 선언) -->
-  <main class="w-full max-w-5xl mx-auto bg-white border border-slate-200/80 rounded-3xl shadow-xl overflow-hidden mb-8">
-    
-    <!-- 네비게이션 헤더 & 프라이버시 배지 -->
-    <header class="border-b border-slate-100 px-6 py-6 sm:px-10 flex flex-col md:flex-row items-center justify-between gap-4 bg-gradient-to-b from-slate-50/80 to-white">
-      <div class="flex items-center gap-3.5 text-center md:text-left">
-        <div class="w-12 h-12 rounded-2xl bg-indigo-600 text-white flex items-center justify-center text-2xl shadow-lg shadow-indigo-200 shrink-0">
-          <i class="fa-solid fa-file-pdf"></i>
-        </div>
-        <div>
-          <div class="flex items-center gap-2 justify-center md:justify-start">
-            <h1 class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">PDF 툴박스</h1>
-            <span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-200">v1.0 클라이언트 전용</span>
-          </div>
-          <p class="text-xs sm:text-sm text-slate-500 mt-0.5">서버 업로드 없는 100% 로컬 프라이버시 PDF 도구</p>
-        </div>
-      </div>
-
-      <!-- 상단 액션 버튼 그룹 (PRO 모달 & 배지) -->
-      <div class="flex items-center gap-2.5">
-        <div class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-bold">
-          <i class="fa-solid fa-shield-halved text-emerald-600"></i>
-          <span>100% Zero-Upload 보증</span>
-        </div>
-        <button id="proBtn" onclick="openProModal()" class="px-3.5 py-1.5 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white text-xs font-bold rounded-xl shadow-sm transition flex items-center gap-1.5">
-          <i class="fa-solid fa-crown"></i>
-          <span id="proBtnText">PRO 라이선스</span>
-        </button>
-      </div>
-    </header>
-
-    <!-- 안심 배지 바 -->
-    <div class="bg-indigo-50/70 border-b border-indigo-100 px-6 py-2.5 text-xs text-indigo-900 flex items-center justify-between flex-wrap gap-2">
-      <div class="flex items-center gap-2">
-        <i class="fa-solid fa-lock text-indigo-600"></i>
-        <span><strong>완벽한 보안:</strong> 귀하의 파일은 서버로 1바이트도 전송되지 않으며, 브라우저 메모리 안에서만 가공 후 탭을 닫으면 소멸합니다.</span>
-      </div>
-      <a href="privacy.html" class="underline hover:text-indigo-700 font-semibold text-[11px]">로컬 연산 보증서 읽기 →</a>
-    </div>
-
-    <!-- LOGIC START -->
-    <!-- 툴 탭 네비게이션 -->
-    <div class="p-4 sm:p-6 pb-0">
-      <div class="grid grid-cols-3 sm:grid-cols-6 gap-2 bg-slate-100 p-1.5 rounded-2xl text-xs font-medium text-slate-600">
-        <button class="tool-tab tab-active py-2.5 px-2 rounded-xl transition flex flex-col sm:flex-row items-center justify-center gap-1.5" onclick="switchTool('merge')">
-          <i class="fa-solid fa-object-group text-sm"></i>
-          <span>PDF 병합</span>
-        </button>
-        <button class="tool-tab py-2.5 px-2 rounded-xl transition flex flex-col sm:flex-row items-center justify-center gap-1.5 hover:bg-slate-200" onclick="switchTool('split')">
-          <i class="fa-solid fa-scissors text-sm"></i>
-          <span>PDF 분할</span>
-        </button>
-        <button class="tool-tab py-2.5 px-2 rounded-xl transition flex flex-col sm:flex-row items-center justify-center gap-1.5 hover:bg-slate-200" onclick="switchTool('img2pdf')">
-          <i class="fa-solid fa-image text-sm"></i>
-          <span>이미지 ➔ PDF</span>
-        </button>
-        <button class="tool-tab py-2.5 px-2 rounded-xl transition flex flex-col sm:flex-row items-center justify-center gap-1.5 hover:bg-slate-200" onclick="switchTool('organize')">
-          <i class="fa-solid fa-rotate text-sm"></i>
-          <span>회전/삭제</span>
-        </button>
-        <button class="tool-tab py-2.5 px-2 rounded-xl transition flex flex-col sm:flex-row items-center justify-center gap-1.5 hover:bg-slate-200" onclick="switchTool('sign')">
-          <i class="fa-solid fa-signature text-sm"></i>
-          <span>전자서명</span>
-        </button>
-        <button class="tool-tab py-2.5 px-2 rounded-xl transition flex flex-col sm:flex-row items-center justify-center gap-1.5 hover:bg-slate-200" onclick="switchTool('compress')">
-          <i class="fa-solid fa-file-zipper text-sm"></i>
-          <span>PDF 압축</span>
-        </button>
-      </div>
-    </div>
-
-    <!-- 2단 대칭형 인터랙티브 작업 구역 (PC: 좌 6열 / 우 6열 1:1 대칭 그리드) -->
-    <div class="p-6 sm:p-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-      
-      <!-- 좌측 6열: 입력 및 설정 제어 패널 -->
-      <div class="lg:col-span-6 space-y-6">
-
-        <!-- 1. PDF 병합 섹션 -->
-        <section id="panel-merge" class="tool-panel space-y-5">
-          <div class="border-b border-slate-100 pb-3">
-            <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
-              <i class="fa-solid fa-object-group text-indigo-600"></i>
+<!-- 상단 슬림 띠배너 (헤더 직상단: 50~60px 슬림형) -->
+<div class="manual-ad-box ad-top-banner w-full max-w-5xl mx-auto my-2 text-center overflow-hidden">
+<ins class="adsbygoogle" data-ad-client="ca-pub-2228289204702106" data-ad-format="horizontal" data-ad-slot="3824727725" data-full-width-responsive="true" style="display:inline-block;width:100%;height:60px;"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- 메인 래퍼 (최대 1024px 너비, Double-Nesting 방지 루트 단일 선언) -->
+<main class="w-full max-w-5xl mx-auto bg-white border border-slate-200/80 rounded-3xl shadow-xl overflow-hidden mb-8">
+<!-- 네비게이션 헤더 & 프라이버시 배지 -->
+<header class="border-b border-slate-100 px-6 py-6 sm:px-10 flex flex-col md:flex-row items-center justify-between gap-4 bg-gradient-to-b from-slate-50/80 to-white">
+<div class="flex items-center gap-3.5 text-center md:text-left">
+<div class="w-12 h-12 rounded-2xl bg-indigo-600 text-white flex items-center justify-center text-2xl shadow-lg shadow-indigo-200 shrink-0">
+<i class="fa-solid fa-file-pdf"></i>
+</div>
+<div>
+<div class="flex items-center gap-2 justify-center md:justify-start">
+<h1 class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">PDF 툴박스</h1>
+<span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-200">v1.0 클라이언트 전용</span>
+</div>
+<p class="text-xs sm:text-sm text-slate-500 mt-0.5">서버 업로드 없는 100% 로컬 프라이버시 PDF 도구</p>
+</div>
+</div>
+<!-- 상단 액션 버튼 그룹 (PRO 모달 & 배지) -->
+<div class="flex items-center gap-2.5">
+<div class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-bold">
+<i class="fa-solid fa-shield-halved text-emerald-600"></i>
+<span>100% Zero-Upload 보증</span>
+</div>
+<button class="px-3.5 py-1.5 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white text-xs font-bold rounded-xl shadow-sm transition flex items-center gap-1.5" id="proBtn" onclick="openProModal()">
+<i class="fa-solid fa-crown"></i>
+<span id="proBtnText">PRO 라이선스</span>
+</button>
+</div>
+</header>
+<!-- 안심 배지 바 -->
+<div class="bg-indigo-50/70 border-b border-indigo-100 px-6 py-2.5 text-xs text-indigo-900 flex items-center justify-between flex-wrap gap-2">
+<div class="flex items-center gap-2">
+<i class="fa-solid fa-lock text-indigo-600"></i>
+<span><strong>완벽한 보안:</strong> 귀하의 파일은 서버로 1바이트도 전송되지 않으며, 브라우저 메모리 안에서만 가공 후 탭을 닫으면 소멸합니다.</span>
+</div>
+<a class="underline hover:text-indigo-700 font-semibold text-[11px]" href="privacy.html">로컬 연산 보증서 읽기 →</a>
+</div>
+<!-- LOGIC START -->
+<!-- 툴 탭 네비게이션 -->
+<div class="p-4 sm:p-6 pb-0">
+<div class="grid grid-cols-3 sm:grid-cols-6 gap-2 bg-slate-100 p-1.5 rounded-2xl text-xs font-medium text-slate-600">
+<button class="tool-tab tab-active py-2.5 px-2 rounded-xl transition flex flex-col sm:flex-row items-center justify-center gap-1.5" onclick="switchTool('merge')">
+<i class="fa-solid fa-object-group text-sm"></i>
+<span>PDF 병합</span>
+</button>
+<button class="tool-tab py-2.5 px-2 rounded-xl transition flex flex-col sm:flex-row items-center justify-center gap-1.5 hover:bg-slate-200" onclick="switchTool('split')">
+<i class="fa-solid fa-scissors text-sm"></i>
+<span>PDF 분할</span>
+</button>
+<button class="tool-tab py-2.5 px-2 rounded-xl transition flex flex-col sm:flex-row items-center justify-center gap-1.5 hover:bg-slate-200" onclick="switchTool('img2pdf')">
+<i class="fa-solid fa-image text-sm"></i>
+<span>이미지 ➔ PDF</span>
+</button>
+<button class="tool-tab py-2.5 px-2 rounded-xl transition flex flex-col sm:flex-row items-center justify-center gap-1.5 hover:bg-slate-200" onclick="switchTool('organize')">
+<i class="fa-solid fa-rotate text-sm"></i>
+<span>회전/삭제</span>
+</button>
+<button class="tool-tab py-2.5 px-2 rounded-xl transition flex flex-col sm:flex-row items-center justify-center gap-1.5 hover:bg-slate-200" onclick="switchTool('sign')">
+<i class="fa-solid fa-signature text-sm"></i>
+<span>전자서명</span>
+</button>
+<button class="tool-tab py-2.5 px-2 rounded-xl transition flex flex-col sm:flex-row items-center justify-center gap-1.5 hover:bg-slate-200" onclick="switchTool('compress')">
+<i class="fa-solid fa-file-zipper text-sm"></i>
+<span>PDF 압축</span>
+</button>
+</div>
+</div>
+<!-- 2단 대칭형 인터랙티브 작업 구역 (PC: 좌 6열 / 우 6열 1:1 대칭 그리드) -->
+<div class="p-6 sm:p-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- 좌측 6열: 입력 및 설정 제어 패널 -->
+<div class="lg:col-span-6 space-y-6">
+<!-- 1. PDF 병합 섹션 -->
+<section class="tool-panel space-y-5" id="panel-merge">
+<div class="border-b border-slate-100 pb-3">
+<h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+<i class="fa-solid fa-object-group text-indigo-600"></i>
               여러 PDF 파일을 하나로 합치기
             </h2>
-            <p class="text-xs text-slate-500 mt-1">파일들을 원하는 순서로 배치한 뒤 단일 PDF로 안전하게 병합합니다.</p>
-          </div>
-
-          <!-- 드롭존 -->
-          <div class="drop-zone border-2 border-dashed border-indigo-200 hover:border-indigo-500 rounded-2xl p-8 text-center bg-indigo-50/20 cursor-pointer transition" onclick="document.getElementById('mergeFileInput').click()">
-            <input type="file" id="mergeFileInput" multiple accept=".pdf,application/pdf" class="hidden" onchange="handleMergeFiles(this.files)"/>
-            <div class="w-14 h-14 mx-auto rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center text-2xl mb-3">
-              <i class="fa-solid fa-cloud-arrow-up"></i>
-            </div>
-            <p class="text-sm font-bold text-slate-800">PDF 파일들을 여기에 끌어다 놓거나 클릭하세요</p>
-            <p class="text-xs text-slate-400 mt-1">2개 이상의 PDF 파일을 선택해주세요 (무제한 무료)</p>
-          </div>
-
-          <!-- 파일 목록 & 순서 제어 -->
-          <div id="mergeFileListContainer" class="space-y-2 hidden">
-            <div class="flex justify-between items-center text-xs font-bold text-slate-600 px-1">
-              <span>병합 순서 목록 (<span id="mergeFileCount">0</span>개)</span>
-              <button onclick="clearMergeFiles()" class="text-rose-500 hover:underline">전체 비우기</button>
-            </div>
-            <div id="mergeFileList" class="space-y-2 max-h-60 overflow-y-auto custom-scrollbar pr-1"></div>
-          </div>
-
-          <!-- 실행 버튼 -->
-          <button id="btnRunMerge" onclick="executeMerge()" class="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold rounded-2xl shadow-lg shadow-indigo-200 transition active:scale-[0.99] flex items-center justify-center gap-2">
-            <i class="fa-solid fa-wand-magic-sparkles"></i>
-            <span>하나의 PDF로 병합 다운로드</span>
-          </button>
-        </section>
-
-        <!-- 2. PDF 분할 섹션 -->
-        <section id="panel-split" class="tool-panel space-y-5 hidden">
-          <div class="border-b border-slate-100 pb-3">
-            <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
-              <i class="fa-solid fa-scissors text-indigo-600"></i>
+<p class="text-xs text-slate-500 mt-1">파일들을 원하는 순서로 배치한 뒤 단일 PDF로 안전하게 병합합니다.</p>
+</div>
+<!-- 드롭존 -->
+<div class="drop-zone border-2 border-dashed border-indigo-200 hover:border-indigo-500 rounded-2xl p-8 text-center bg-indigo-50/20 cursor-pointer transition" onclick="document.getElementById('mergeFileInput').click()">
+<input accept=".pdf,application/pdf" class="hidden" id="mergeFileInput" multiple="" onchange="handleMergeFiles(this.files)" type="file"/>
+<div class="w-14 h-14 mx-auto rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center text-2xl mb-3">
+<i class="fa-solid fa-cloud-arrow-up"></i>
+</div>
+<p class="text-sm font-bold text-slate-800">PDF 파일들을 여기에 끌어다 놓거나 클릭하세요</p>
+<p class="text-xs text-slate-400 mt-1">2개 이상의 PDF 파일을 선택해주세요 (무제한 무료)</p>
+</div>
+<!-- 파일 목록 & 순서 제어 -->
+<div class="space-y-2 hidden" id="mergeFileListContainer">
+<div class="flex justify-between items-center text-xs font-bold text-slate-600 px-1">
+<span>병합 순서 목록 (<span id="mergeFileCount">0</span>개)</span>
+<button class="text-rose-500 hover:underline" onclick="clearMergeFiles()">전체 비우기</button>
+</div>
+<div class="space-y-2 max-h-60 overflow-y-auto custom-scrollbar pr-1" id="mergeFileList"></div>
+</div>
+<!-- 실행 버튼 -->
+<button class="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold rounded-2xl shadow-lg shadow-indigo-200 transition active:scale-[0.99] flex items-center justify-center gap-2" id="btnRunMerge" onclick="executeMerge()">
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+<span>하나의 PDF로 병합 다운로드</span>
+</button>
+</section>
+<!-- 2. PDF 분할 섹션 -->
+<section class="tool-panel space-y-5 hidden" id="panel-split">
+<div class="border-b border-slate-100 pb-3">
+<h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+<i class="fa-solid fa-scissors text-indigo-600"></i>
               PDF 특정 페이지 추출 및 분할
             </h2>
-            <p class="text-xs text-slate-500 mt-1">원하는 페이지 번호나 범위를 지정하여 필요한 페이지만 쏙 추출합니다.</p>
-          </div>
-
-          <div class="drop-zone border-2 border-dashed border-indigo-200 hover:border-indigo-500 rounded-2xl p-8 text-center bg-indigo-50/20 cursor-pointer transition" onclick="document.getElementById('splitFileInput').click()">
-            <input type="file" id="splitFileInput" accept=".pdf,application/pdf" class="hidden" onchange="handleSplitFile(this.files[0])"/>
-            <div class="w-14 h-14 mx-auto rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center text-2xl mb-3">
-              <i class="fa-solid fa-file-arrow-up"></i>
-            </div>
-            <p class="text-sm font-bold text-slate-800" id="splitFileNameDisplay">분할할 PDF 파일을 선택하세요</p>
-            <p class="text-xs text-slate-400 mt-1" id="splitFileInfoDisplay">클릭하거나 파일을 드롭하세요</p>
-          </div>
-
-          <div id="splitOptions" class="space-y-3 bg-slate-50 p-4 rounded-xl border border-slate-200 hidden">
-            <label class="block text-xs font-bold text-slate-700">추출할 페이지 범위 (예: 1-3, 5)</label>
-            <input type="text" id="splitRangeInput" placeholder="예: 1-2, 4" class="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-xl text-sm font-mono focus:ring-2 focus:ring-indigo-500 outline-none" value="1"/>
-            <p class="text-[11px] text-slate-500">※ 쉼표(,)와 하이픈(-)을 사용하여 유연하게 페이지를 지정할 수 있습니다.</p>
-          </div>
-
-          <button id="btnRunSplit" onclick="executeSplit()" class="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold rounded-2xl shadow-lg shadow-indigo-200 transition active:scale-[0.99] flex items-center justify-center gap-2">
-            <i class="fa-solid fa-scissors"></i>
-            <span>지정 페이지 분할 다운로드</span>
-          </button>
-        </section>
-
-        <!-- 3. 이미지 ➔ PDF 변환 섹션 -->
-        <section id="panel-img2pdf" class="tool-panel space-y-5 hidden">
-          <div class="border-b border-slate-100 pb-3">
-            <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
-              <i class="fa-solid fa-image text-indigo-600"></i>
+<p class="text-xs text-slate-500 mt-1">원하는 페이지 번호나 범위를 지정하여 필요한 페이지만 쏙 추출합니다.</p>
+</div>
+<div class="drop-zone border-2 border-dashed border-indigo-200 hover:border-indigo-500 rounded-2xl p-8 text-center bg-indigo-50/20 cursor-pointer transition" onclick="document.getElementById('splitFileInput').click()">
+<input accept=".pdf,application/pdf" class="hidden" id="splitFileInput" onchange="handleSplitFile(this.files[0])" type="file"/>
+<div class="w-14 h-14 mx-auto rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center text-2xl mb-3">
+<i class="fa-solid fa-file-arrow-up"></i>
+</div>
+<p class="text-sm font-bold text-slate-800" id="splitFileNameDisplay">분할할 PDF 파일을 선택하세요</p>
+<p class="text-xs text-slate-400 mt-1" id="splitFileInfoDisplay">클릭하거나 파일을 드롭하세요</p>
+</div>
+<div class="space-y-3 bg-slate-50 p-4 rounded-xl border border-slate-200 hidden" id="splitOptions">
+<label class="block text-xs font-bold text-slate-700">추출할 페이지 범위 (예: 1-3, 5)</label>
+<input class="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-xl text-sm font-mono focus:ring-2 focus:ring-indigo-500 outline-none" id="splitRangeInput" placeholder="예: 1-2, 4" type="text" value="1"/>
+<p class="text-[11px] text-slate-500">※ 쉼표(,)와 하이픈(-)을 사용하여 유연하게 페이지를 지정할 수 있습니다.</p>
+</div>
+<button class="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold rounded-2xl shadow-lg shadow-indigo-200 transition active:scale-[0.99] flex items-center justify-center gap-2" id="btnRunSplit" onclick="executeSplit()">
+<i class="fa-solid fa-scissors"></i>
+<span>지정 페이지 분할 다운로드</span>
+</button>
+</section>
+<!-- 3. 이미지 ➔ PDF 변환 섹션 -->
+<section class="tool-panel space-y-5 hidden" id="panel-img2pdf">
+<div class="border-b border-slate-100 pb-3">
+<h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+<i class="fa-solid fa-image text-indigo-600"></i>
               이미지(JPG, PNG) ➔ PDF 문서 변환
             </h2>
-            <p class="text-xs text-slate-500 mt-1">스마트폰 사진이나 영수증 이미지를 고화질 단일 PDF로 즉시 묶어줍니다.</p>
-          </div>
-
-          <div class="drop-zone border-2 border-dashed border-indigo-200 hover:border-indigo-500 rounded-2xl p-8 text-center bg-indigo-50/20 cursor-pointer transition" onclick="document.getElementById('imgFileInput').click()">
-            <input type="file" id="imgFileInput" multiple accept="image/jpeg,image/png,image/webp" class="hidden" onchange="handleImgFiles(this.files)"/>
-            <div class="w-14 h-14 mx-auto rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center text-2xl mb-3">
-              <i class="fa-solid fa-images"></i>
-            </div>
-            <p class="text-sm font-bold text-slate-800">이미지 파일들을 선택하거나 드롭하세요</p>
-            <p class="text-xs text-slate-400 mt-1">JPG, PNG, WEBP 다중 선택 지원</p>
-          </div>
-
-          <div id="imgPreviewListContainer" class="space-y-2 hidden">
-            <div class="flex justify-between items-center text-xs font-bold text-slate-600 px-1">
-              <span>선택된 이미지 (<span id="imgFileCount">0</span>장)</span>
-              <button onclick="clearImgFiles()" class="text-rose-500 hover:underline">전체 비우기</button>
-            </div>
-            <div id="imgPreviewList" class="grid grid-cols-4 gap-2 max-h-52 overflow-y-auto custom-scrollbar p-2 bg-slate-50 rounded-xl border border-slate-200"></div>
-          </div>
-
-          <button id="btnRunImg2Pdf" onclick="executeImg2Pdf()" class="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold rounded-2xl shadow-lg shadow-indigo-200 transition active:scale-[0.99] flex items-center justify-center gap-2">
-            <i class="fa-solid fa-file-pdf"></i>
-            <span>이미지를 PDF로 변환 다운로드</span>
-          </button>
-        </section>
-
-        <!-- 4. 회전 / 삭제 섹션 -->
-        <section id="panel-organize" class="tool-panel space-y-5 hidden">
-          <div class="border-b border-slate-100 pb-3">
-            <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
-              <i class="fa-solid fa-rotate text-indigo-600"></i>
+<p class="text-xs text-slate-500 mt-1">스마트폰 사진이나 영수증 이미지를 고화질 단일 PDF로 즉시 묶어줍니다.</p>
+</div>
+<div class="drop-zone border-2 border-dashed border-indigo-200 hover:border-indigo-500 rounded-2xl p-8 text-center bg-indigo-50/20 cursor-pointer transition" onclick="document.getElementById('imgFileInput').click()">
+<input accept="image/jpeg,image/png,image/webp" class="hidden" id="imgFileInput" multiple="" onchange="handleImgFiles(this.files)" type="file"/>
+<div class="w-14 h-14 mx-auto rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center text-2xl mb-3">
+<i class="fa-solid fa-images"></i>
+</div>
+<p class="text-sm font-bold text-slate-800">이미지 파일들을 선택하거나 드롭하세요</p>
+<p class="text-xs text-slate-400 mt-1">JPG, PNG, WEBP 다중 선택 지원</p>
+</div>
+<div class="space-y-2 hidden" id="imgPreviewListContainer">
+<div class="flex justify-between items-center text-xs font-bold text-slate-600 px-1">
+<span>선택된 이미지 (<span id="imgFileCount">0</span>장)</span>
+<button class="text-rose-500 hover:underline" onclick="clearImgFiles()">전체 비우기</button>
+</div>
+<div class="grid grid-cols-4 gap-2 max-h-52 overflow-y-auto custom-scrollbar p-2 bg-slate-50 rounded-xl border border-slate-200" id="imgPreviewList"></div>
+</div>
+<button class="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold rounded-2xl shadow-lg shadow-indigo-200 transition active:scale-[0.99] flex items-center justify-center gap-2" id="btnRunImg2Pdf" onclick="executeImg2Pdf()">
+<i class="fa-solid fa-file-pdf"></i>
+<span>이미지를 PDF로 변환 다운로드</span>
+</button>
+</section>
+<!-- 4. 회전 / 삭제 섹션 -->
+<section class="tool-panel space-y-5 hidden" id="panel-organize">
+<div class="border-b border-slate-100 pb-3">
+<h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+<i class="fa-solid fa-rotate text-indigo-600"></i>
               페이지 회전 및 불필요한 페이지 삭제
             </h2>
-            <p class="text-xs text-slate-500 mt-1">돌아간 문서를 90도 회전시키고 빈 페이지나 불필요한 페이지를 제거합니다.</p>
-          </div>
-
-          <div class="drop-zone border-2 border-dashed border-indigo-200 hover:border-indigo-500 rounded-2xl p-8 text-center bg-indigo-50/20 cursor-pointer transition" onclick="document.getElementById('orgFileInput').click()">
-            <input type="file" id="orgFileInput" accept=".pdf,application/pdf" class="hidden" onchange="handleOrganizeFile(this.files[0])"/>
-            <div class="w-14 h-14 mx-auto rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center text-2xl mb-3">
-              <i class="fa-solid fa-arrows-rotate"></i>
-            </div>
-            <p class="text-sm font-bold text-slate-800" id="orgFileNameDisplay">회전/삭제할 PDF를 선택하세요</p>
-            <p class="text-xs text-slate-400 mt-1" id="orgFileInfoDisplay">클릭하여 파일 선택</p>
-          </div>
-
-          <div id="orgOptions" class="space-y-3 bg-slate-50 p-4 rounded-xl border border-slate-200 hidden">
-            <div class="flex items-center justify-between">
-              <label class="text-xs font-bold text-slate-700">전체 페이지 일괄 90도 회전</label>
-              <button type="button" onclick="rotateAllPages()" class="px-3 py-1 bg-white border border-slate-300 hover:bg-slate-100 rounded-lg text-xs font-bold text-indigo-600">
+<p class="text-xs text-slate-500 mt-1">돌아간 문서를 90도 회전시키고 빈 페이지나 불필요한 페이지를 제거합니다.</p>
+</div>
+<div class="drop-zone border-2 border-dashed border-indigo-200 hover:border-indigo-500 rounded-2xl p-8 text-center bg-indigo-50/20 cursor-pointer transition" onclick="document.getElementById('orgFileInput').click()">
+<input accept=".pdf,application/pdf" class="hidden" id="orgFileInput" onchange="handleOrganizeFile(this.files[0])" type="file"/>
+<div class="w-14 h-14 mx-auto rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center text-2xl mb-3">
+<i class="fa-solid fa-arrows-rotate"></i>
+</div>
+<p class="text-sm font-bold text-slate-800" id="orgFileNameDisplay">회전/삭제할 PDF를 선택하세요</p>
+<p class="text-xs text-slate-400 mt-1" id="orgFileInfoDisplay">클릭하여 파일 선택</p>
+</div>
+<div class="space-y-3 bg-slate-50 p-4 rounded-xl border border-slate-200 hidden" id="orgOptions">
+<div class="flex items-center justify-between">
+<label class="text-xs font-bold text-slate-700">전체 페이지 일괄 90도 회전</label>
+<button class="px-3 py-1 bg-white border border-slate-300 hover:bg-slate-100 rounded-lg text-xs font-bold text-indigo-600" onclick="rotateAllPages()" type="button">
                 시계방향 90° 회전
               </button>
-            </div>
-            <div class="pt-2 border-t border-slate-200">
-              <label class="block text-xs font-bold text-slate-700 mb-1">삭제할 페이지 번호 (쉼표 구분)</label>
-              <input type="text" id="orgDeletePagesInput" placeholder="예: 2, 4 (비워두면 삭제 안함)" class="w-full px-3 py-2 bg-white border border-slate-300 rounded-lg text-xs font-mono outline-none"/>
-            </div>
-          </div>
-
-          <button id="btnRunOrganize" onclick="executeOrganize()" class="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold rounded-2xl shadow-lg shadow-indigo-200 transition active:scale-[0.99] flex items-center justify-center gap-2">
-            <i class="fa-solid fa-floppy-disk"></i>
-            <span>정리된 PDF 저장 다운로드</span>
-          </button>
-        </section>
-
-        <!-- 5. 전자서명 섹션 -->
-        <section id="panel-sign" class="tool-panel space-y-5 hidden">
-          <div class="border-b border-slate-100 pb-3">
-            <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
-              <i class="fa-solid fa-signature text-indigo-600"></i>
+</div>
+<div class="pt-2 border-t border-slate-200">
+<label class="block text-xs font-bold text-slate-700 mb-1">삭제할 페이지 번호 (쉼표 구분)</label>
+<input class="w-full px-3 py-2 bg-white border border-slate-300 rounded-lg text-xs font-mono outline-none" id="orgDeletePagesInput" placeholder="예: 2, 4 (비워두면 삭제 안함)" type="text"/>
+</div>
+</div>
+<button class="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold rounded-2xl shadow-lg shadow-indigo-200 transition active:scale-[0.99] flex items-center justify-center gap-2" id="btnRunOrganize" onclick="executeOrganize()">
+<i class="fa-solid fa-floppy-disk"></i>
+<span>정리된 PDF 저장 다운로드</span>
+</button>
+</section>
+<!-- 5. 전자서명 섹션 -->
+<section class="tool-panel space-y-5 hidden" id="panel-sign">
+<div class="border-b border-slate-100 pb-3">
+<h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+<i class="fa-solid fa-signature text-indigo-600"></i>
               PDF 계약서 전자서명 날인
             </h2>
-            <p class="text-xs text-slate-500 mt-1">마우스나 손가락으로 서명을 그리고 원하는 위치에 도장을 찍어 다운로드합니다.</p>
-          </div>
-
-          <!-- 서명 캔버스 패드 -->
-          <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 space-y-2">
-            <div class="flex justify-between items-center text-xs font-bold text-slate-700">
-              <span>✍️ 서명 패드 (아래에 서명을 그려주세요)</span>
-              <button onclick="clearSignatureCanvas()" class="text-slate-400 hover:text-rose-500 text-xs">지우기</button>
-            </div>
-            <canvas id="signCanvas" width="400" height="150" class="w-full h-36 bg-white border border-slate-300 rounded-xl cursor-crosshair shadow-inner"></canvas>
-          </div>
-
-          <div class="drop-zone border-2 border-dashed border-indigo-200 hover:border-indigo-500 rounded-2xl p-6 text-center bg-indigo-50/20 cursor-pointer transition" onclick="document.getElementById('signFileInput').click()">
-            <input type="file" id="signFileInput" accept=".pdf,application/pdf" class="hidden" onchange="handleSignFile(this.files[0])"/>
-            <p class="text-xs font-bold text-slate-700" id="signFileNameDisplay">서명할 PDF 문서를 선택하세요</p>
-          </div>
-
-          <button id="btnRunSign" onclick="executeSign()" class="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold rounded-2xl shadow-lg shadow-indigo-200 transition active:scale-[0.99] flex items-center justify-center gap-2">
-            <i class="fa-solid fa-file-signature"></i>
-            <span>서명 합성 완료 및 PDF 다운로드</span>
-          </button>
-        </section>
-
-        <!-- 6. PDF 압축 섹션 -->
-        <section id="panel-compress" class="tool-panel space-y-5 hidden">
-          <div class="border-b border-slate-100 pb-3">
-            <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
-              <i class="fa-solid fa-file-zipper text-indigo-600"></i>
+<p class="text-xs text-slate-500 mt-1">마우스나 손가락으로 서명을 그리고 원하는 위치에 도장을 찍어 다운로드합니다.</p>
+</div>
+<!-- 서명 캔버스 패드 -->
+<div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 space-y-2">
+<div class="flex justify-between items-center text-xs font-bold text-slate-700">
+<span>✍️ 서명 패드 (아래에 서명을 그려주세요)</span>
+<button class="text-slate-400 hover:text-rose-500 text-xs" onclick="clearSignatureCanvas()">지우기</button>
+</div>
+<canvas class="w-full h-36 bg-white border border-slate-300 rounded-xl cursor-crosshair shadow-inner" height="150" id="signCanvas" width="400"></canvas>
+</div>
+<div class="drop-zone border-2 border-dashed border-indigo-200 hover:border-indigo-500 rounded-2xl p-6 text-center bg-indigo-50/20 cursor-pointer transition" onclick="document.getElementById('signFileInput').click()">
+<input accept=".pdf,application/pdf" class="hidden" id="signFileInput" onchange="handleSignFile(this.files[0])" type="file"/>
+<p class="text-xs font-bold text-slate-700" id="signFileNameDisplay">서명할 PDF 문서를 선택하세요</p>
+</div>
+<button class="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold rounded-2xl shadow-lg shadow-indigo-200 transition active:scale-[0.99] flex items-center justify-center gap-2" id="btnRunSign" onclick="executeSign()">
+<i class="fa-solid fa-file-signature"></i>
+<span>서명 합성 완료 및 PDF 다운로드</span>
+</button>
+</section>
+<!-- 6. PDF 압축 섹션 -->
+<section class="tool-panel space-y-5 hidden" id="panel-compress">
+<div class="border-b border-slate-100 pb-3">
+<h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+<i class="fa-solid fa-file-zipper text-indigo-600"></i>
               PDF 파일 용량 최적화 압축
             </h2>
-            <p class="text-xs text-slate-500 mt-1">대용량 PDF 문서의 내부 객체와 불필요한 메타데이터를 정리하여 경량화합니다.</p>
-          </div>
-
-          <div class="drop-zone border-2 border-dashed border-indigo-200 hover:border-indigo-500 rounded-2xl p-8 text-center bg-indigo-50/20 cursor-pointer transition" onclick="document.getElementById('compressFileInput').click()">
-            <input type="file" id="compressFileInput" accept=".pdf,application/pdf" class="hidden" onchange="handleCompressFile(this.files[0])"/>
-            <div class="w-14 h-14 mx-auto rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center text-2xl mb-3">
-              <i class="fa-solid fa-compress"></i>
-            </div>
-            <p class="text-sm font-bold text-slate-800" id="compFileNameDisplay">압축할 PDF를 선택하세요</p>
-            <p class="text-xs text-slate-400 mt-1" id="compFileInfoDisplay">클릭하여 파일 업로드</p>
-          </div>
-
-          <div class="space-y-2 bg-slate-50 p-4 rounded-xl border border-slate-200">
-            <label class="block text-xs font-bold text-slate-700">압축 강도 선택</label>
-            <div class="grid grid-cols-3 gap-2 text-xs font-bold text-center">
-              <label class="p-2 bg-white border border-slate-200 rounded-lg cursor-pointer peer-checked:border-indigo-600">
-                <input type="radio" name="compLevel" value="light" class="mr-1"> 가벼운 압축
+<p class="text-xs text-slate-500 mt-1">대용량 PDF 문서의 내부 객체와 불필요한 메타데이터를 정리하여 경량화합니다.</p>
+</div>
+<div class="drop-zone border-2 border-dashed border-indigo-200 hover:border-indigo-500 rounded-2xl p-8 text-center bg-indigo-50/20 cursor-pointer transition" onclick="document.getElementById('compressFileInput').click()">
+<input accept=".pdf,application/pdf" class="hidden" id="compressFileInput" onchange="handleCompressFile(this.files[0])" type="file"/>
+<div class="w-14 h-14 mx-auto rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center text-2xl mb-3">
+<i class="fa-solid fa-compress"></i>
+</div>
+<p class="text-sm font-bold text-slate-800" id="compFileNameDisplay">압축할 PDF를 선택하세요</p>
+<p class="text-xs text-slate-400 mt-1" id="compFileInfoDisplay">클릭하여 파일 업로드</p>
+</div>
+<div class="space-y-2 bg-slate-50 p-4 rounded-xl border border-slate-200">
+<label class="block text-xs font-bold text-slate-700">압축 강도 선택</label>
+<div class="grid grid-cols-3 gap-2 text-xs font-bold text-center">
+<label class="p-2 bg-white border border-slate-200 rounded-lg cursor-pointer peer-checked:border-indigo-600">
+<input class="mr-1" name="compLevel" type="radio" value="light"/> 가벼운 압축
               </label>
-              <label class="p-2 bg-white border border-indigo-500 rounded-lg cursor-pointer bg-indigo-50/50">
-                <input type="radio" name="compLevel" value="standard" checked class="mr-1"> 표준 압축
+<label class="p-2 bg-white border border-indigo-500 rounded-lg cursor-pointer bg-indigo-50/50">
+<input checked="" class="mr-1" name="compLevel" type="radio" value="standard"/> 표준 압축
               </label>
-              <label class="p-2 bg-white border border-slate-200 rounded-lg cursor-pointer">
-                <input type="radio" name="compLevel" value="high" class="mr-1"> 최대 압축
+<label class="p-2 bg-white border border-slate-200 rounded-lg cursor-pointer">
+<input class="mr-1" name="compLevel" type="radio" value="high"/> 최대 압축
               </label>
-            </div>
-          </div>
-
-          <button id="btnRunCompress" onclick="executeCompress()" class="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold rounded-2xl shadow-lg shadow-indigo-200 transition active:scale-[0.99] flex items-center justify-center gap-2">
-            <i class="fa-solid fa-bolt"></i>
-            <span>최적화 압축 및 다운로드</span>
-          </button>
-        </section>
-
-      </div>
-
-      <!-- 우측 6열: 결과 영수증 & 실시간 대시보드 (PC lg:sticky 고정) -->
-      <div class="lg:col-span-6 space-y-5 lg:sticky lg:top-6">
-        
-        <!-- 실시간 처리 상태 & 결과 영수증 카드 -->
-        <div id="resultCard" class="bg-slate-900 text-white rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-800 relative overflow-hidden">
-          
-          <div class="flex justify-between items-start border-b border-slate-800 pb-5">
-            <div>
-              <span class="text-[10px] font-mono tracking-widest text-indigo-400 uppercase">CLIENT RUNTIME STATUS</span>
-              <h3 class="text-lg font-bold text-white mt-1 flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span id="resStatusTitle">도구 대기 중</span>
-              </h3>
-            </div>
-            <div class="text-right font-mono text-xs text-slate-400">
-              <span id="resProcessTime">0.0s</span>
-            </div>
-          </div>
-
-          <!-- 동적 작업 명세 영수증 -->
-          <div class="py-6 space-y-4 font-mono text-xs">
-            <div class="flex justify-between text-slate-400">
-              <span>ACTIVE TOOL:</span>
-              <span class="text-white font-bold" id="resToolName">PDF MERGE</span>
-            </div>
-            <div class="flex justify-between text-slate-400">
-              <span>INPUT SUMMARY:</span>
-              <span class="text-white font-bold" id="resInputDetail">선택된 파일 없음</span>
-            </div>
-            <div class="flex justify-between text-slate-400">
-              <span>PROCESSED OUTPUT:</span>
-              <span class="text-emerald-400 font-bold" id="resOutputDetail">준비 완료</span>
-            </div>
-            
-            <!-- 진행 상태 바 -->
-            <div id="resProgressBarContainer" class="w-full bg-slate-800 rounded-full h-2 overflow-hidden hidden">
-              <div id="resProgressBar" class="bg-indigo-500 h-2 rounded-full transition-all duration-300" style="width: 0%"></div>
-            </div>
-          </div>
-
-          <!-- 다운로드 및 복사 버튼 액션 -->
-          <div class="pt-4 border-t border-slate-800 space-y-2.5">
-            <a id="resDownloadBtn" href="#" download="processed.pdf" class="w-full py-3.5 bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-black rounded-xl text-center shadow-lg shadow-emerald-950/40 transition flex items-center justify-center gap-2 hidden">
-              <i class="fa-solid fa-download"></i>
-              <span id="resDownloadBtnText">완성된 PDF 파일 다운로드</span>
-            </a>
-
-            <!-- 전사 공통 원클릭 결과 복사 버튼 -->
-            <button type="button" onclick="copyPdfToolResult()" class="w-full py-3 bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold rounded-xl text-xs transition flex items-center justify-center gap-2">
-              <i class="fa-solid fa-copy text-amber-400"></i>
-              <span>작업 결과 및 바로가기 클립보드 복사</span>
-            </button>
-          </div>
-
-          <!-- 보안 확인 문구 -->
-          <div class="mt-4 text-center text-[10px] text-slate-500 font-mono">
+</div>
+</div>
+<button class="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold rounded-2xl shadow-lg shadow-indigo-200 transition active:scale-[0.99] flex items-center justify-center gap-2" id="btnRunCompress" onclick="executeCompress()">
+<i class="fa-solid fa-bolt"></i>
+<span>최적화 압축 및 다운로드</span>
+</button>
+</section>
+</div>
+<!-- 우측 6열: 결과 영수증 & 실시간 대시보드 (PC lg:sticky 고정) -->
+<div class="lg:col-span-6 space-y-5 lg:sticky lg:top-6">
+<!-- 실시간 처리 상태 & 결과 영수증 카드 -->
+<div class="bg-slate-900 text-white rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-800 relative overflow-hidden" id="resultCard">
+<div class="flex justify-between items-start border-b border-slate-800 pb-5">
+<div>
+<span class="text-[10px] font-mono tracking-widest text-indigo-400 uppercase">CLIENT RUNTIME STATUS</span>
+<h3 class="text-lg font-bold text-white mt-1 flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+<span id="resStatusTitle">도구 대기 중</span>
+</h3>
+</div>
+<div class="text-right font-mono text-xs text-slate-400">
+<span id="resProcessTime">0.0s</span>
+</div>
+</div>
+<!-- 동적 작업 명세 영수증 -->
+<div class="py-6 space-y-4 font-mono text-xs">
+<div class="flex justify-between text-slate-400">
+<span>ACTIVE TOOL:</span>
+<span class="text-white font-bold" id="resToolName">PDF MERGE</span>
+</div>
+<div class="flex justify-between text-slate-400">
+<span>INPUT SUMMARY:</span>
+<span class="text-white font-bold" id="resInputDetail">선택된 파일 없음</span>
+</div>
+<div class="flex justify-between text-slate-400">
+<span>PROCESSED OUTPUT:</span>
+<span class="text-emerald-400 font-bold" id="resOutputDetail">준비 완료</span>
+</div>
+<!-- 진행 상태 바 -->
+<div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden hidden" id="resProgressBarContainer">
+<div class="bg-indigo-500 h-2 rounded-full transition-all duration-300" id="resProgressBar" style="width: 0%"></div>
+</div>
+</div>
+<!-- 다운로드 및 복사 버튼 액션 -->
+<div class="pt-4 border-t border-slate-800 space-y-2.5">
+<a class="w-full py-3.5 bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-black rounded-xl text-center shadow-lg shadow-emerald-950/40 transition flex items-center justify-center gap-2 hidden" download="processed.pdf" href="#" id="resDownloadBtn">
+<i class="fa-solid fa-download"></i>
+<span id="resDownloadBtnText">완성된 PDF 파일 다운로드</span>
+</a>
+<!-- 전사 공통 원클릭 결과 복사 버튼 -->
+<button class="w-full py-3 bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold rounded-xl text-xs transition flex items-center justify-center gap-2" onclick="copyPdfToolResult()" type="button">
+<i class="fa-solid fa-copy text-amber-400"></i>
+<span>작업 결과 및 바로가기 클립보드 복사</span>
+</button>
+</div>
+<!-- 보안 확인 문구 -->
+<div class="mt-4 text-center text-[10px] text-slate-500 font-mono">
             100% IN-MEMORY DISCARD UPON TAB CLOSE · ZERO DATA PERSISTENCE
           </div>
-        </div>
-
-        <!-- 롱테일 정보 박스 -->
-        <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm text-xs text-slate-600 space-y-2">
-          <div class="font-bold text-slate-800 text-sm flex items-center gap-1.5">
-            <i class="fa-solid fa-circle-question text-indigo-500"></i>
-            <span>자주 묻는 질문 (FAQ)</span>
-          </div>
-          <p><strong>Q. 정말 외부 서버에 제 파일이 업로드되지 않나요?</strong><br/>
+</div>
+<!-- 롱테일 정보 박스 -->
+<div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm text-xs text-slate-600 space-y-2">
+<div class="font-bold text-slate-800 text-sm flex items-center gap-1.5">
+<i class="fa-solid fa-circle-question text-indigo-500"></i>
+<span>자주 묻는 질문 (FAQ)</span>
+</div>
+<p><strong>Q. 정말 외부 서버에 제 파일이 업로드되지 않나요?</strong><br/>
           네, PDF 툴박스는 최신 브라우저의 WebAssembly 및 HTML5 FileReader 엔진을 통해 사용자의 기기 CPU/RAM에서만 파일을 열고 저장합니다. 인터넷 연결을 끊고도 모든 변환 작업이 100% 작동합니다.</p>
-        </div>
-
-      </div>
-
-    </div>
-    <!-- LOGIC END -->
-
-    <!-- E-E-A-T 서브페이지 네비게이션 링크 푸터 -->
-    
+</div>
+</div>
+</div>
+<!-- LOGIC END -->
+<!-- E-E-A-T 서브페이지 네비게이션 링크 푸터 -->
 <!-- 🔗 연관 유틸리티 도구 추천 카드 (사용자 체류시간 증가 & SEO 내부 링크) -->
 <section class="max-w-4xl mx-auto my-8 px-4">
-  <div class="bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm">
-    <h3 class="text-base font-black text-slate-900 dark:text-white mb-4 flex items-center gap-2">
-      <span>💡</span> 함께 많이 활용하는 필수 계산기 & 도구
+<div class="bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm">
+<h3 class="text-base font-black text-slate-900 dark:text-white mb-4 flex items-center gap-2">
+<span>💡</span> 함께 많이 활용하는 필수 계산기 &amp; 도구
     </h3>
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5">
-      
-      <a href="https://bg-remover.enjoy-onepage.com/" class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:shadow-md transition flex items-center justify-between group">
-        <div>
-          <div class="text-xs text-blue-600 dark:text-blue-400 font-bold mb-1">추천 유틸리티</div>
-          <div class="text-sm font-black text-slate-800 dark:text-slate-100 group-hover:text-blue-600 transition">무료 사진 배경 제거기 (누끼따기)</div>
-        </div>
-        <span class="text-slate-400 group-hover:translate-x-1 transition font-bold">→</span>
-      </a>
-      <a href="https://convert-hub.enjoy-onepage.com/" class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:shadow-md transition flex items-center justify-between group">
-        <div>
-          <div class="text-xs text-blue-600 dark:text-blue-400 font-bold mb-1">추천 유틸리티</div>
-          <div class="text-sm font-black text-slate-800 dark:text-slate-100 group-hover:text-blue-600 transition">무제한 이미지 포맷 변환기</div>
-        </div>
-        <span class="text-slate-400 group-hover:translate-x-1 transition font-bold">→</span>
-      </a>
-      <a href="https://doc-scanner.enjoy-onepage.com/" class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:shadow-md transition flex items-center justify-between group">
-        <div>
-          <div class="text-xs text-blue-600 dark:text-blue-400 font-bold mb-1">추천 유틸리티</div>
-          <div class="text-sm font-black text-slate-800 dark:text-slate-100 group-hover:text-blue-600 transition">모바일 웹 문서 스캐너</div>
-        </div>
-        <span class="text-slate-400 group-hover:translate-x-1 transition font-bold">→</span>
-      </a>
-    </div>
-  </div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5">
+<a class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:shadow-md transition flex items-center justify-between group" href="https://bg-remover.enjoy-onepage.com/">
+<div>
+<div class="text-xs text-blue-600 dark:text-blue-400 font-bold mb-1">추천 유틸리티</div>
+<div class="text-sm font-black text-slate-800 dark:text-slate-100 group-hover:text-blue-600 transition">무료 사진 배경 제거기 (누끼따기)</div>
+</div>
+<span class="text-slate-400 group-hover:translate-x-1 transition font-bold">→</span>
+</a>
+<a class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:shadow-md transition flex items-center justify-between group" href="https://convert-hub.enjoy-onepage.com/">
+<div>
+<div class="text-xs text-blue-600 dark:text-blue-400 font-bold mb-1">추천 유틸리티</div>
+<div class="text-sm font-black text-slate-800 dark:text-slate-100 group-hover:text-blue-600 transition">무제한 이미지 포맷 변환기</div>
+</div>
+<span class="text-slate-400 group-hover:translate-x-1 transition font-bold">→</span>
+</a>
+<a class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:shadow-md transition flex items-center justify-between group" href="https://doc-scanner.enjoy-onepage.com/">
+<div>
+<div class="text-xs text-blue-600 dark:text-blue-400 font-bold mb-1">추천 유틸리티</div>
+<div class="text-sm font-black text-slate-800 dark:text-slate-100 group-hover:text-blue-600 transition">모바일 웹 문서 스캐너</div>
+</div>
+<span class="text-slate-400 group-hover:translate-x-1 transition font-bold">→</span>
+</a>
+</div>
+</div>
 </section>
-
 <footer class="bg-slate-50 border-t border-slate-200 px-6 py-6 text-center text-xs text-slate-500">
-      <div class="max-w-3xl mx-auto flex flex-wrap items-center justify-center gap-4 mb-3 font-medium">
-        <a href="about.html" class="hover:text-indigo-600 transition">서비스 소개 & 공식 산출 기준</a>
-        <span class="text-slate-300">·</span>
-        <a href="privacy.html" class="hover:text-indigo-600 transition">개인정보처리방침 (로컬 연산 보증)</a>
-        <span class="text-slate-300">·</span>
-        <a href="terms.html" class="hover:text-indigo-600 transition">이용약관</a>
-        <span class="text-slate-300">·</span>
-        <a href="sitemap.xml" class="hover:text-indigo-600 transition">사이트맵</a>
-      </div>
-      <p>© 2026 PDF Toolbox. All rights reserved. Zero-Upload Client-Side Architecture.</p>
-    </footer>
-
-  </main>
-
-  <!-- 하단 대형 배너 (푸터 직전: 3416334507, 1:1 푸시 규격) -->
-  <div class="manual-ad-box ad-bottom-banner w-full max-w-5xl mx-auto mb-8 text-center overflow-hidden">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-2228289204702106"
-         data-ad-slot="3416334507"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  </div>
-
-  <!-- Lemon Squeezy PRO 라이선스 등록 모달 -->
-  <div id="proModal" class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
-    <div class="bg-white w-full max-w-md rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-100 text-center space-y-5">
-      <div class="w-14 h-14 mx-auto rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center text-2xl">
-        <i class="fa-solid fa-crown"></i>
-      </div>
-      <div>
-        <h3 class="text-xl font-black text-slate-900">PRO 평생 무광고 라이선스</h3>
-        <p class="text-xs text-slate-500 mt-1">한 번 구매로 모든 광고 영구 제거 및 평생 무제한 이용</p>
-      </div>
-
-      <div class="bg-amber-50/70 border border-amber-200/80 p-4 rounded-2xl text-left text-xs space-y-1.5 text-amber-900 font-medium">
-        <p>✓ 모든 구글 광고 영구 차단 (클린 UI)</p>
-        <p>✓ 1회 결제 ($2.99 / 약 3,900원, 정기 구독 아님)</p>
-        <p>✓ 최대 3대 기기(PC/스마트폰) 동시 인증 지원</p>
-      </div>
-
-      <div class="space-y-2">
-        <input type="text" id="proLicenseKeyInput" placeholder="라이선스 키 입력 (예: PRO-XXXX-XXXX)" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-xs font-mono text-center uppercase focus:ring-2 focus:ring-amber-500 outline-none"/>
-        <button onclick="verifyProLicenseKey()" class="w-full py-3 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded-xl transition">
+<div class="max-w-3xl mx-auto flex flex-wrap items-center justify-center gap-4 mb-3 font-medium">
+<a class="hover:text-indigo-600 transition" href="about.html">서비스 소개 &amp; 공식 산출 기준</a>
+<span class="text-slate-300">·</span>
+<a class="hover:text-indigo-600 transition" href="privacy.html">개인정보처리방침 (로컬 연산 보증)</a>
+<span class="text-slate-300">·</span>
+<a class="hover:text-indigo-600 transition" href="terms.html">이용약관</a>
+<span class="text-slate-300">·</span>
+<a class="hover:text-indigo-600 transition" href="sitemap.xml">사이트맵</a>
+</div>
+<p>© 2026 PDF Toolbox. All rights reserved. Zero-Upload Client-Side Architecture.</p>
+</footer>
+</main>
+<!-- 하단 대형 배너 (푸터 직전: 3416334507, 1:1 푸시 규격) -->
+<div class="manual-ad-box ad-bottom-banner w-full max-w-5xl mx-auto mb-8 text-center overflow-hidden">
+<ins class="adsbygoogle" data-ad-client="ca-pub-2228289204702106" data-ad-format="auto" data-ad-slot="3416334507" data-full-width-responsive="true" style="display:block"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- Lemon Squeezy PRO 라이선스 등록 모달 -->
+<div class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden" id="proModal">
+<div class="bg-white w-full max-w-md rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-100 text-center space-y-5">
+<div class="w-14 h-14 mx-auto rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center text-2xl">
+<i class="fa-solid fa-crown"></i>
+</div>
+<div>
+<h3 class="text-xl font-black text-slate-900">PRO 평생 무광고 라이선스</h3>
+<p class="text-xs text-slate-500 mt-1">한 번 구매로 모든 광고 영구 제거 및 평생 무제한 이용</p>
+</div>
+<div class="bg-amber-50/70 border border-amber-200/80 p-4 rounded-2xl text-left text-xs space-y-1.5 text-amber-900 font-medium">
+<p>✓ 모든 구글 광고 영구 차단 (클린 UI)</p>
+<p>✓ 1회 결제 ($2.99 / 약 3,900원, 정기 구독 아님)</p>
+<p>✓ 최대 3대 기기(PC/스마트폰) 동시 인증 지원</p>
+</div>
+<div class="space-y-2">
+<input class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-xs font-mono text-center uppercase focus:ring-2 focus:ring-amber-500 outline-none" id="proLicenseKeyInput" placeholder="라이선스 키 입력 (예: PRO-XXXX-XXXX)" type="text">
+<button class="w-full py-3 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded-xl transition" onclick="verifyProLicenseKey()">
           라이선스 키 인증하기
         </button>
-      </div>
-
-      <div class="pt-3 border-t border-slate-100 flex flex-col gap-2 text-xs">
-        <a href="https://lemonsqueezy.com" target="_blank" class="text-amber-600 font-bold hover:underline">
+</input></div>
+<div class="pt-3 border-t border-slate-100 flex flex-col gap-2 text-xs">
+<a class="text-amber-600 font-bold hover:underline" href="https://lemonsqueezy.com" target="_blank">
           👉 아직 키가 없으신가요? 평생 이용권 구매하기 ($2.99)
         </a>
-        <button onclick="closeProModal()" class="text-slate-400 hover:text-slate-600">닫기</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- 토스트 알림 컨테이너 -->
-  <div id="global-ux-toast" style="position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(10px);background:#1e293b;color:#fff;padding:12px 24px;border-radius:9999px;font-size:14px;font-weight:600;box-shadow:0 10px 25px rgba(0,0,0,0.2);z-index:9999;transition:all 0.3s ease;opacity:0;pointer-events:none;">
+<button class="text-slate-400 hover:text-slate-600" onclick="closeProModal()">닫기</button>
+</div>
+</div>
+</div>
+<!-- 토스트 알림 컨테이너 -->
+<div id="global-ux-toast" style="position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(10px);background:#1e293b;color:#fff;padding:12px 24px;border-radius:9999px;font-size:14px;font-weight:600;box-shadow:0 10px 25px rgba(0,0,0,0.2);z-index:9999;transition:all 0.3s ease;opacity:0;pointer-events:none;">
     알림 메시지
   </div>
-
-  <!-- PDF 코어 연산 & 인터랙션 스크립트 -->
-  <script>
+<!-- PDF 코어 연산 & 인터랙션 스크립트 -->
+<script>
     const { PDFDocument, degrees } = PDFLib;
 
     let activeTool = 'merge';
