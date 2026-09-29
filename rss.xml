@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>PDF 툴박스 | 브라우저 100% 로컬 PDF 병합·분할·압축·변환·서명 도구</title>
+  <link>https://pdf-toolbox.enjoy-onepage.com/</link>
+  <description>서버 전송 없는 100% 브라우저 로컬 PDF 올인원 도구. PDF 병합, 분할, 압축, 이미지 변환, 페이지 회전/삭제, 전자서명을 영구 무료 무제한으로 사용하세요.</description>
+  <language>ko-kr</language>
+  <atom:link href="https://pdf-toolbox.enjoy-onepage.com/rss.xml" rel="self" type="application/rss+xml" />
+  <lastBuildDate>Tue, 29 Sep 2026 06:00:56 +0000</lastBuildDate>
+  <item>
+    <title>이용약관 | PDF 툴박스</title>
+    <link>https://pdf-toolbox.enjoy-onepage.com/terms.html</link>
+    <guid isPermaLink="true">https://pdf-toolbox.enjoy-onepage.com/terms.html</guid>
+    <description>이용약관 | PDF 툴박스</description>
+    <pubDate>Mon, 14 Sep 2026 11:54:47 +0900</pubDate>
+  </item>
+  <item>
+    <title>서비스 소개 &amp; 오픈소스 아키텍처 | PDF 툴박스</title>
+    <link>https://pdf-toolbox.enjoy-onepage.com/about.html</link>
+    <guid isPermaLink="true">https://pdf-toolbox.enjoy-onepage.com/about.html</guid>
+    <description>서비스 소개 &amp; 오픈소스 아키텍처 | PDF 툴박스</description>
+    <pubDate>Mon, 14 Sep 2026 11:54:47 +0900</pubDate>
+  </item>
+  <item>
+    <title>개인정보처리방침 (Zero-Upload 로컬 처리 보증) | PDF 툴박스</title>
+    <link>https://pdf-toolbox.enjoy-onepage.com/privacy.html</link>
+    <guid isPermaLink="true">https://pdf-toolbox.enjoy-onepage.com/privacy.html</guid>
+    <description>개인정보처리방침 (Zero-Upload 로컬 처리 보증) | PDF 툴박스</description>
+    <pubDate>Mon, 14 Sep 2026 11:54:47 +0900</pubDate>
+  </item>
+</channel>
+</rss>
