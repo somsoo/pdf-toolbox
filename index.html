@@ -30,7 +30,6 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
 <!-- pdf-lib (클라이언트 사이드 순수 PDF 엔진) -->
 <script src="./pdf-lib.min.js"></script>
-<script>if(typeof PDFLib === "undefined"){document.write('<script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"><\/script>');}</script>
 <!-- Google AdSense 비동기 로더 -->
 <script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2228289204702106"></script>
 <style>
@@ -627,6 +626,8 @@
     }
 
     // 1. PDF 병합 로직
+    function escHtml(s) { return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]); }
+
     function handleMergeFiles(files) {
       for (let f of files) {
         if (f.type === 'application/pdf' || f.name.endsWith('.pdf')) {
@@ -655,7 +656,7 @@
         <div class="flex items-center justify-between p-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs">
           <div class="flex items-center gap-2 truncate pr-2">
             <span class="w-5 h-5 rounded-md bg-indigo-100 text-indigo-700 font-bold flex items-center justify-center shrink-0 text-[10px]">${idx + 1}</span>
-            <span class="font-bold text-slate-800 truncate">${f.name}</span>
+            <span class="font-bold text-slate-800 truncate">${escHtml(f.name)}</span>
             <span class="text-[10px] text-slate-400 shrink-0">(${(f.size / 1024).toFixed(1)} KB)</span>
           </div>
           <div class="flex items-center gap-1 shrink-0">
