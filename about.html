@@ -1,41 +1,29 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>서비스 소개 & 오픈소스 아키텍처 | PDF 툴박스</title>
-  <style>/* site styles: compiled Tailwind 3.4.17 for this page (replaces the CDN, 2026-09-30) */*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.mx-auto{margin-left:auto;margin-right:auto}.mb-2{margin-bottom:.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mt-8{margin-top:2rem}.inline-flex{display:inline-flex}.min-h-screen{min-height:100vh}.max-w-3xl{max-width:48rem}.items-center{align-items:center}.space-y-6>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem*var(--tw-space-y-reverse))}.rounded-2xl{border-radius:1rem}.rounded-xl{border-radius:.75rem}.border{border-width:1px}.border-t{border-top-width:1px}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249/var(--tw-border-opacity,1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240/var(--tw-border-opacity,1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity,1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.pt-6{padding-top:1.5rem}.text-center{text-align:center}.font-sans{font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}.text-2xl{font-size:1.5rem;line-height:2rem}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xs{font-size:.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-semibold{font-weight:600}.leading-relaxed{line-height:1.625}.text-indigo-600{--tw-text-opacity:1;color:rgb(79 70 229/var(--tw-text-opacity,1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184/var(--tw-text-opacity,1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139/var(--tw-text-opacity,1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105/var(--tw-text-opacity,1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59/var(--tw-text-opacity,1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42/var(--tw-text-opacity,1))}.shadow-sm{--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.hover\:text-indigo-800:hover{--tw-text-opacity:1;color:rgb(55 48 163/var(--tw-text-opacity,1))}@media (min-width:640px){.sm\:p-10{padding:2.5rem}.sm\:p-8{padding:2rem}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}}</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, follow">
+<title>소개 | PDF 툴박스</title>
+<meta name="description" content="이 도구가 무엇을 하는지 짧게 소개합니다.">
+<link rel="canonical" href="https://pdf-toolbox.enjoy-onepage.com/about.html">
+<link rel="icon" href="/favicon.ico">
+<style>
+:root{--ink:#0f172a;--muted:#475569;--accent:#1d4ed8;--line:#e2e8f0;--bg:#f8fafc}
+*{box-sizing:border-box}
+body{margin:0;padding:20px 14px;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Segoe UI",Roboto,sans-serif;line-height:1.7;word-break:keep-all;overflow-wrap:anywhere}
+.container{max-width:720px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 22px 26px}
+h1{font-size:1.4rem;margin:0 0 10px}
+p{font-size:.95rem;color:#334155}
+.back{display:inline-block;margin-top:18px;padding:10px 16px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700}
+</style>
 </head>
-<body class="bg-slate-50 text-slate-800 min-h-screen p-4 sm:p-8 font-sans">
-  <div class="max-w-3xl mx-auto bg-white p-6 sm:p-10 rounded-2xl shadow-sm border border-slate-200">
-    <a href="/" class="inline-flex items-center text-indigo-600 hover:text-indigo-800 text-sm font-semibold mb-6">
-      ← PDF 툴박스 메인으로 돌아가기
-    </a>
-    <h1 class="text-2xl sm:text-3xl font-black mb-4 text-slate-900">PDF 툴박스 기술 아키텍처 및 철학</h1>
-    <p class="text-slate-500 mb-6 leading-relaxed">
-      왜 다른 상용 PDF 사이트들은 내 문서를 서버에 올리고, 하루에 2번만 무료로 제한하며, 월 1만 원이 넘는 구독을 강제할까요?
-    </p>
-
-    <div class="space-y-6 text-sm leading-relaxed text-slate-600">
-      <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
-        <h3 class="text-base font-bold text-slate-800 mb-2">1. 완벽한 클라이언트 사이드 웹 표준 기술 (No Server)</h3>
-        <p>PDF 툴박스는 최신 웹 어셈블리(WebAssembly) 및 <strong>pdf-lib</strong>, <strong>PDF.js</strong> 엔진을 활용하여 문서 병합, 분할, 변환, 전자서명 등의 고난도 연산을 브라우저 엔진에서 직접 연산합니다. 서버를 거치지 않으므로 파일 업로드 속도를 기다릴 필요 없이 즉시 결과가 생성됩니다.</p>
-      </div>
-
-      <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
-        <h3 class="text-base font-bold text-slate-800 mb-2">2. 엄격한 개인정보 보호 (100% Zero-Upload)</h3>
-        <p>계약서, 주민등록등본, 의료기록, 금융 문서 등 민감한 개인정보가 담긴 PDF를 원격 서버에 업로드하는 것은 위험합니다. PDF 툴박스는 사용자의 로컬 RAM 메모리에서만 작업하며, 창을 닫는 즉시 완전히 소멸합니다.</p>
-      </div>
-
-      <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
-        <h3 class="text-base font-bold text-slate-800 mb-2">3. 무제한 무료 & 정직한 일회성 커피값 플랜</h3>
-        <p>핵심 기능은 영구 무제한 무료입니다. 광고 없는 깔끔한 작업 환경을 원하시는 분들을 위해 정기 구독 결제가 아닌, <strong>$2.99 일회성 평생 라이선스</strong>(Lemon Squeezy 제공)만을 제공합니다.</p>
-      </div>
-    </div>
-    
-    <div class="mt-8 pt-6 border-t border-slate-100 text-xs text-slate-400 text-center">
-      © 2026 PDF Toolbox · Zero Server Architecture
-    </div>
-  </div>
+<body>
+<div class="container">
+  <h1>PDF 툴박스 소개</h1>
+  <p>PDF 파일을 합치거나 나누고, 이미지를 PDF로 바꾸고, 페이지를 돌리거나 지우고, 서명을 넣을 수 있는 무료 도구입니다.</p>
+  <p>파일은 서버에 올리지 않고 이 브라우저 안에서 처리합니다.</p>
+  <a class="back" href="/">← 도구로 돌아가기</a>
+</div>
 </body>
 </html>
