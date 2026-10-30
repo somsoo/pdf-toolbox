@@ -530,6 +530,9 @@
       </div>
 
 
+<!-- KIRO:TOPIC-LINKS START -->
+<section style="max-width:760px;margin:24px auto;padding:0 16px"><h2 style="font-size:1.1rem;font-weight:800;margin:0 0 8px">📌 자세한 안내</h2><a href="/merge-pdf.html" style="display:block;padding:10px 12px;margin:6px 0;border:1px solid #e2e8f0;border-radius:10px;background:#fff;color:#1e293b;font-weight:600;text-decoration:none">PDF 합치기: 파일을 서버에 올리지 않고 하나로 묶기 →</a><a href="/image-to-pdf.html" style="display:block;padding:10px 12px;margin:6px 0;border:1px solid #e2e8f0;border-radius:10px;background:#fff;color:#1e293b;font-weight:600;text-decoration:none">사진·JPG를 PDF로 바꾸기: 여러 장을 한 파일로 →</a><a href="/compress-pdf.html" style="display:block;padding:10px 12px;margin:6px 0;border:1px solid #e2e8f0;border-radius:10px;background:#fff;color:#1e293b;font-weight:600;text-decoration:none">PDF 용량 줄이기: 이 도구로 되는 것과 안 되는 것 →</a></section>
+<!-- KIRO:TOPIC-LINKS END -->
 <footer class="bg-slate-50 border-t border-slate-200 px-6 py-6 text-center text-xs text-slate-500">
 <div class="max-w-3xl mx-auto flex flex-wrap items-center justify-center gap-4 mb-3 font-medium">
 <a class="hover:text-indigo-600 transition" href="about.html">서비스 소개 &amp; 공식 산출 기준</a>
@@ -1229,5 +1232,7 @@
     document.addEventListener('DOMContentLoaded', () => {
 });
   </script>
+<!-- KIRO:DEEPLINK -->
+<script>(function(){var t=new URLSearchParams(location.search).get('tool');if(t&&['merge','split','img2pdf','organize','sign','compress'].indexOf(t)>-1&&typeof switchTool==='function'){switchTool(t);}})();</script>
 </body>
 </html>

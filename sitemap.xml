@@ -18,4 +18,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://pdf-toolbox.enjoy-onepage.com/merge-pdf.html</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://pdf-toolbox.enjoy-onepage.com/image-to-pdf.html</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://pdf-toolbox.enjoy-onepage.com/compress-pdf.html</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
 </urlset>
